@@ -2091,3 +2091,172 @@ p{
 }
 
 }
+
+
+
+
+/* FINAL WEBSITE FIX */
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+/* MAKE ALL TEXT VISIBLE */
+
+h1,h2,h3,h4,p,span,a{
+    visibility:visible;
+    opacity:1;
+}
+
+
+/* GLOBAL TEXT SIZE REDUCTION */
+
+h1{
+    font-size:48px;
+    line-height:1.15;
+}
+
+
+h2{
+    font-size:32px;
+    line-height:1.3;
+}
+
+
+h3{
+    font-size:20px;
+}
+
+
+p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+/* IMAGES FIX */
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:cover;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* HERO IMAGE FIX */
+
+.hero{
+
+    min-height:85vh;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+
+/* CARDS FIX */
+
+.testimonial-card,
+.why-card,
+.faq-item,
+.service-card,
+.category-card{
+
+    height:auto;
+
+    min-height:150px;
+
+    overflow:visible;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+/* SECTION TEXT FIX */
+
+.section-title p{
+
+    display:block;
+
+    color:#A9B4C8;
+
+}
+
+
+.section-tag{
+
+    color:#E7C75F;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+}
+
+
+
+/* MOBILE DESIGN */
+
+@media(max-width:600px){
+
+
+h1{
+    font-size:34px;
+}
+
+
+h2{
+    font-size:26px;
+}
+
+
+h3{
+    font-size:18px;
+}
+
+
+p{
+    font-size:14px;
+}
+
+
+.hero{
+
+    min-height:80vh;
+
+}
+
+
+.section-title{
+
+    padding:0 15px;
+
+}
+
+
+}
