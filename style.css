@@ -471,11 +471,15 @@ transform:translateY(-8px);
 
 .hero{
 
-min-height:100vh;
+min-height:85vh;
 
-background:url("YOUR-IMAGE-LINK-HERE")
+background-image:url("images/hero.webp");
 
-center/cover no-repeat;
+background-position:center;
+
+background-size:cover;
+
+background-repeat:no-repeat;
 
 position:relative;
 
@@ -2046,3 +2050,44 @@ height:300px;
 
 
   }
+
+
+/* Smaller luxury typography */
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:34px;
+}
+
+h3{
+    font-size:22px;
+}
+
+p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+@media(max-width:600px){
+
+h1{
+    font-size:34px;
+}
+
+h2{
+    font-size:28px;
+}
+
+h3{
+    font-size:19px;
+}
+
+p{
+    font-size:14px;
+}
+
+}
