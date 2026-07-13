@@ -30,10 +30,12 @@ html{
 body{
 
     font-family:"Poppins", sans-serif;
+   
+    background:#071321;
 
-    background:#FFF8EE;
+    color:white;
 
-    color:#1B1B1B;
+}
 
     overflow-x:hidden;
 
@@ -89,11 +91,17 @@ ul{
 
 :root{
 
---gold:#E7C873;
---cream:#FFF6EA;
---dark:#15100E;
---rose:#D9A6A6;
+--gold:#E7C75F;
+
+--navy:#071321;
+
+--dark:#0B1625;
+
 --white:#FFFFFF;
+
+--soft:#A9B4C8;
+
+--cream:#F8F3EA;
 
 }
 
@@ -630,38 +638,18 @@ transform:translateY(0);
 ========================= */
 
 
-.about{
+.about,
+.services,
+.why-us,
+.testimonials,
+.booking,
+.contact{
 
+padding:90px 0;
 
-padding:100px 0;
+background:#071321;
 
-
-}
-
-
-
-.about-container{
-
-
-width:90%;
-
-max-width:1200px;
-
-
-margin:auto;
-
-
-display:grid;
-
-
-grid-template-columns:1fr 1fr;
-
-
-gap:60px;
-
-
-align-items:center;
-
+color:white;
 
 }
 
