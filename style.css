@@ -1,4 +1,567 @@
+/* ==================================================
+   BIRHAN BEAUTY SALON
+   LUXURY DESIGN SYSTEM
+================================================== */
+
 /* =========================
+   GLOBAL RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --gold:#E7C75F;
+    --navy:#071321;
+    --dark:#0B1625;
+    --white:#FFFFFF;
+    --soft:#A9B4C8;
+    --cream:#F8F3EA;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--navy);
+    color:var(--white);
+    overflow-x:hidden;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family:"Cormorant Garamond",serif;
+    font-weight:700;
+    color:var(--white);
+}
+
+h1{
+    font-size:58px;
+    line-height:1.1;
+}
+
+h2{
+    font-size:44px;
+    line-height:1.2;
+}
+
+h3{
+    font-size:24px;
+}
+
+p{
+    font-size:15px;
+    line-height:1.8;
+    color:var(--soft);
+}
+
+img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+   LOADING SCREEN
+========================= */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:var(--navy);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:loaderHide 2.5s forwards;
+}
+
+.loader h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:60px;
+    color:var(--gold);
+    letter-spacing:4px;
+    animation:logoPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes logoPulse{
+
+    0%{
+        opacity:.4;
+        transform:scale(.98);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100%{
+        opacity:.4;
+        transform:scale(.98);
+    }
+
+}
+
+@keyframes loaderHide{
+
+    0%,85%{
+        opacity:1;
+        visibility:visible;
+    }
+
+    100%{
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+
+       /* =========================
+   NAVBAR
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    transition:.35s ease;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 28px;
+
+    background:rgba(7,19,33,.78);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(231,199,95,.18);
+    border-radius:18px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+.logo{
+    font-family:"Cormorant Garamond",serif;
+    font-size:32px;
+    font-weight:700;
+    color:var(--white);
+    line-height:1;
+}
+
+.logo span{
+    display:block;
+    margin-top:6px;
+
+    font-family:"Poppins",sans-serif;
+    font-size:10px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    color:var(--gold);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:500;
+    color:var(--white);
+    transition:.3s;
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.nav-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    background:var(--gold);
+    color:var(--navy);
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:.35s ease;
+}
+
+.nav-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(231,199,95,.35);
+}
+
+@media(max-width:900px){
+
+    .navbar{
+        padding:14px 18px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .nav-links,
+    .nav-btn{
+        display:none;
+    }
+
+}
+    }
+/* =========================
+   LOADING SCREEN
+========================= */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:var(--navy);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:loaderHide 2.5s forwards;
+}
+
+.loader h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:60px;
+    color:var(--gold);
+    letter-spacing:4px;
+    animation:logoPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes logoPulse{
+
+    0%{
+        opacity:.4;
+        transform:scale(.98);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100%{
+        opacity:.4;
+        transform:scale(.98);
+    }
+
+}
+
+@keyframes loaderHide{
+
+    0%,85%{
+        opacity:1;
+        visibility:visible;
+    }
+
+    100%{
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+    }
+
+}/* =========================
+   BUTTON SYSTEM
+========================= */
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    font-size:14px;
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+}
+
+.primary-btn{
+
+    background:var(--gold);
+
+    color:var(--navy);
+
+    border:1px solid transparent;
+
+    box-shadow:0 10px 30px rgba(231,199,95,.25);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 16px 35px rgba(231,199,95,.40);
+
+}
+
+.secondary-btn{
+
+    background:transparent;
+
+    color:var(--white);
+
+    border:1px solid rgba(231,199,95,.55);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--gold);
+
+    color:var(--navy);
+
+    border-color:var(--gold);
+
+    transform:translateY(-4px);
+
+}
+
+.primary-btn:active,
+.secondary-btn:active{
+
+    transform:scale(.98);
+
+}
+
+@media(max-width:600px){
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        padding:14px 22px;
+
+        font-size:14px;
+
+    }
+
+}/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:100vh;
+
+    background:url("images/hero.webp") center center/cover no-repeat;
+
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(7,19,33,.55),
+        rgba(7,19,33,.82)
+    );
+
+    z-index:1;
+}
+
+.hero-content{
+
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:720px;
+
+    margin:auto;
+
+    text-align:left;
+
+    color:var(--white);
+
+    animation:heroFade 1.2s ease;
+}
+
+.small-title{
+
+    display:inline-block;
+
+    color:var(--gold);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    line-height:1.08;
+
+    margin-bottom:22px;
+
+    color:var(--white);
+}
+
+.hero p{
+
+    max-width:560px;
+
+    font-size:15px;
+
+    color:var(--soft);
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+}
+
+@keyframes heroFade{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   MOBILE HERO
+========================= */
+
+@media(max-width:900px){
+
+    .hero{
+        min-height:90vh;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        text-align:center;
+        padding:120px 0 70px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        margin:auto auto 30px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+}/* =========================
    BIRHAN BEAUTY SALON
    LUXURY STYLE SYSTEM
 ========================= */
@@ -2259,4 +2822,5 @@ p{
 }
 
 
+   }
 }
